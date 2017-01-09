@@ -1,0 +1,23 @@
+@import 'smart-grid';
+@import 'fonts';
+@import '../libs/normalize-css/normalize';
+@import 'media';
+
+.wrapper {
+    @include wrapper();
+
+    .row {
+        @include row-flex();
+        @include justify-content(center);
+
+        .col {
+            @include col();
+            @include col-3();
+            @include col-md-6();
+            @include col-xs-12();
+
+            background-color: #c5c5c5;
+            text-align: center;
+        }
+    }
+}
